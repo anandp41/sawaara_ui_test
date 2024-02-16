@@ -1,5 +1,7 @@
 # Screens
+
 --Clean Architecture
+
 --BLoC for state management via VelocityBLoc package
 
 # Commit Events
