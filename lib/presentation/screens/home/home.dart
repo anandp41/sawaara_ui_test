@@ -60,6 +60,9 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return PersistentTabView(
+      navBarHeight: 62,
+      // margin: EdgeInsets.only(top: 30),
+      padding: const NavBarPadding.symmetric(vertical: 10, horizontal: 2),
       context,
       controller: _controller,
       screens: pages,
@@ -72,8 +75,10 @@ class _HomeState extends State<Home> {
       stateManagement: true, // Default is true.
       hideNavigationBarWhenKeyboardShows:
           true, // Recommended to set 'resizeToAvoidBottomInset' as true while using this argument. Default is true.
-      decoration: NavBarDecoration(
-        borderRadius: BorderRadius.circular(10.0),
+      decoration: const NavBarDecoration(
+        adjustScreenBottomPaddingOnCurve: false,
+        border: Border(top: BorderSide(width: 0.15)),
+        // borderRadius: BorderRadius.circular(10.0),
         colorBehindNavBar: Colors.white,
       ),
       popAllScreensOnTapOfSelectedTab: true,

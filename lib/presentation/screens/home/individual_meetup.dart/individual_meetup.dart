@@ -23,7 +23,7 @@ class IndividualMeetup extends StatelessWidget {
       backgroundColor: Colors.white,
       body: SafeArea(
           child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 24.w, vertical: 4.h),
+        padding: EdgeInsets.only(left: 24.w, right: 24.w, top: 4.h),
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
