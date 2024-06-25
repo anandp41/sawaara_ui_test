@@ -48,7 +48,7 @@ class _CustomCarouselWithDotsState
                   bottomLeft: Radius.circular(8.r),
                   bottomRight: Radius.circular(8.r))),
           padding: const EdgeInsets.all(0),
-          height: 316.h,
+          height: 306.h,
           width: double.infinity,
           child: Align(
             alignment: Alignment.bottomCenter,
@@ -119,7 +119,7 @@ class _CustomCarouselWithDotsState
                   carouselController: carouselController,
                   items: items,
                   options: CarouselOptions(
-                    height: 280.h,
+                    height: 270.h,
                     aspectRatio: 16 / 9,
                     viewportFraction: 1,
                     initialPage: 0,

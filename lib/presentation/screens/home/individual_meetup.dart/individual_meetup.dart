@@ -16,7 +16,7 @@ class IndividualMeetup extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: false,
       appBar: const PreferredSize(
-          preferredSize: Size.fromHeight(50),
+          preferredSize: Size.fromHeight(70),
           child: CustomAppBar(
             appBarTitle: 'Individual Meetup',
           )),

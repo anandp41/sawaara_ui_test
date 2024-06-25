@@ -13,12 +13,12 @@ class DescriptionPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const PreferredSize(
-          preferredSize: Size.fromHeight(50),
+          preferredSize: Size.fromHeight(70),
           child: CustomAppBar(appBarTitle: "Description")),
       backgroundColor: Colors.white,
       body: SafeArea(
           child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 4.h),
+        padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 2.h),
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -29,7 +29,7 @@ class DescriptionPage extends StatelessWidget {
               ),
               const DescriptionAfterImage(),
               SizedBox(
-                height: 8.h,
+                height: 6.h,
               ),
               const DescriptionAbout()
             ],

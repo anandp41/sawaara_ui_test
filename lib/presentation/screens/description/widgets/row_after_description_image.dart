@@ -25,7 +25,7 @@ class RowAfterDescriptionImage extends StatelessWidget {
           '1034',
           style: TextStyle(
               color: Colors.black.withOpacity(0.7),
-              fontSize: 14,
+              fontSize: 12,
               fontWeight: FontWeight.w600),
         ),
         SizedBox(
@@ -43,7 +43,7 @@ class RowAfterDescriptionImage extends StatelessWidget {
           '1034',
           style: TextStyle(
               color: Colors.black.withOpacity(0.7),
-              fontSize: 14,
+              fontSize: 12,
               fontWeight: FontWeight.w600),
         ),
         SizedBox(
@@ -59,27 +59,27 @@ class RowAfterDescriptionImage extends StatelessWidget {
                 const Icon(
                   Icons.star_rounded,
                   color: Color.fromARGB(255, 97, 186, 238),
-                  size: 20,
+                  size: 17,
                 ),
                 const Icon(
                   Icons.star_rounded,
                   color: MyColors.highlightBlueColor,
-                  size: 20,
+                  size: 17,
                 ),
                 const Icon(
                   Icons.star_rounded,
                   color: MyColors.highlightBlueColor,
-                  size: 20,
+                  size: 17,
                 ),
                 Icon(
                   Icons.star_rounded,
                   color: Colors.blueGrey.withOpacity(0.2),
-                  size: 20,
+                  size: 17,
                 ),
                 const Icon(
                   Icons.star_rounded,
                   color: Colors.white,
-                  size: 20,
+                  size: 17,
                 ),
               ],
             ),
@@ -92,7 +92,7 @@ class RowAfterDescriptionImage extends StatelessWidget {
           '3.2',
           style: TextStyle(
               color: MyColors.lightBlueColor,
-              fontSize: 14,
+              fontSize: 12,
               fontWeight: FontWeight.w500),
         )
       ],

@@ -26,7 +26,7 @@ class CustomAppBar extends StatelessWidget {
           )),
       title: Text(appBarTitle,
           style: TextStyle(
-              fontSize: 22.sp,
+              fontSize: 20.sp,
               color: MyColors.darkBlueColor,
               fontWeight: FontWeight.w500)),
     );

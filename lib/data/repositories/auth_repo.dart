@@ -1,7 +1,8 @@
 import 'dart:convert';
 
-import '../../core/colors.dart';
 import 'package:velocity_x/velocity_x.dart';
+
+import '../../core/colors.dart';
 import '../../presentation/screens/login/login_model.dart';
 import '../data_sources/remote/api_client.dart';
 

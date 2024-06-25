@@ -23,15 +23,15 @@ class DescriptionAfterImage extends StatelessWidget {
           'Actor Name',
           style: aboveNormalDarkBlueTextStyle,
         ),
-        SizedBox(
-          height: 2.h,
-        ),
+        // SizedBox(
+        //   height: 2.h,
+        // ),
         Text(
           'Indian Actress',
           style: descriptionPageSubheadingsWhiteTextStyle,
         ),
         SizedBox(
-          height: 8.h,
+          height: 4.h,
         ),
         Row(
           children: [
@@ -47,7 +47,7 @@ class DescriptionAfterImage extends StatelessWidget {
           ],
         ),
         SizedBox(
-          height: 10.h,
+          height: 2.h,
         ),
         Row(
           children: [
