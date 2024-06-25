@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:screens/core/colors.dart';
+
+import 'colors.dart';
 
 const loginMainHeadingTextStyle =
     TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black);
@@ -15,18 +16,19 @@ const normalSubtleWhiteTextStyle =
 const normalBlueTextStyle = TextStyle(
     fontSize: 18, color: MyColors.lightBlueColor, fontWeight: FontWeight.w600);
 const normalDarkBlueTextStyle = TextStyle(
-    fontSize: 16, color: MyColors.darkBlueColor, fontWeight: FontWeight.w500);
+    fontSize: 15, color: MyColors.darkBlueColor, fontWeight: FontWeight.w500);
 const termsSubtleWhiteTextStyle =
     TextStyle(fontSize: 18, color: Colors.black54, fontWeight: FontWeight.w400);
 const cardSubtleWhiteTextStyle =
-    TextStyle(fontSize: 13, color: Colors.black54, fontWeight: FontWeight.w500);
+    TextStyle(fontSize: 11, color: Colors.black54, fontWeight: FontWeight.w500);
 const cardDarkBlueTextStyle = TextStyle(
-    fontSize: 16, color: MyColors.darkBlueColor, fontWeight: FontWeight.w500);
+    fontSize: 15, color: MyColors.darkBlueColor, fontWeight: FontWeight.w500);
 const aboveNormalDarkBlueTextStyle = TextStyle(
-    fontSize: 18, color: MyColors.darkBlueColor, fontWeight: FontWeight.w500);
+    fontSize: 14, color: MyColors.darkBlueColor, fontWeight: FontWeight.w500);
 var descriptionPageSubheadingsWhiteTextStyle = TextStyle(
-    fontSize: 16,
+    fontSize: 13,
+    height: 2,
     color: Colors.black.withOpacity(0.6),
     fontWeight: FontWeight.w400);
 const normalHighlightBlueTextStyle = TextStyle(
-    fontSize: 16, color: MyColors.lightBlueColor, fontWeight: FontWeight.w500);
+    fontSize: 14, color: MyColors.lightBlueColor, fontWeight: FontWeight.w400);

@@ -2,7 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../core/colors.dart';
+import '../../../../../core/colors.dart';
 import 'image_tile.dart';
 
 class CustomCarouselWithDots extends StatefulWidget {
@@ -37,7 +37,7 @@ class _CustomCarouselWithDotsState extends State<CustomCarouselWithDots> {
             carouselController: carouselController,
             items: items,
             options: CarouselOptions(
-              height: 200,
+              height: 170,
               aspectRatio: 16 / 9,
               viewportFraction: 1,
               initialPage: 0,
@@ -55,7 +55,7 @@ class _CustomCarouselWithDotsState extends State<CustomCarouselWithDots> {
               scrollDirection: Axis.horizontal,
             )),
         const SizedBox(
-          height: 5,
+          height: 8,
         ),
         DotsIndicator(
           onTap: (position) {
@@ -64,8 +64,9 @@ class _CustomCarouselWithDotsState extends State<CustomCarouselWithDots> {
           dotsCount: 3,
           position: currentIndex,
           decorator: const DotsDecorator(
-            activeSize: Size(10, 10),
-            size: Size(10, 10),
+            spacing: EdgeInsets.symmetric(horizontal: 4),
+            activeSize: Size(8, 8),
+            size: Size(8, 8),
             color: Colors.grey, // Inactive color
             activeColor: MyColors.darkBlueColor,
           ),

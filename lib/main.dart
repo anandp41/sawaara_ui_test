@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import 'data/repositories/auth_repo.dart';
 import 'data/repositories/repository.dart';
-import 'presentation/screens/login.dart';
+import 'presentation/screens/login/login.dart';
 
 void main() {
   runApp(RepositoryProvider(
@@ -25,7 +26,6 @@ class MainApp extends StatelessWidget {
         return const MaterialApp(
           debugShowCheckedModeBanner: false,
           home: Login(),
-          // Home(),
         );
       },
     );

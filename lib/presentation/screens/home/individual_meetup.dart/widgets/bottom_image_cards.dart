@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:screens/core/colors.dart';
-import 'package:screens/presentation/screens/description/description.dart';
+
+import '../../../../../core/colors.dart';
+import '../../../description/description.dart';
 
 class BottomImageCards extends StatelessWidget {
   const BottomImageCards({super.key});
@@ -9,12 +10,12 @@ class BottomImageCards extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 150.h,
+      height: 125.h,
       child: GridView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: 4,
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 1, mainAxisSpacing: 20),
+              crossAxisCount: 1, mainAxisSpacing: 16),
           itemBuilder: (context, index) => ImageNumberStack(index: index)),
     );
   }
@@ -32,8 +33,8 @@ class ImageNumberStack extends StatelessWidget {
             MaterialPageRoute(builder: (_) => const DescriptionPage()));
       },
       child: SizedBox(
-        height: 150.h,
-        width: 150.w,
+        height: 140.h,
+        width: 140.w,
         child: Stack(
           children: [
             Container(

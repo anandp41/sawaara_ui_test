@@ -3,6 +3,7 @@ import 'package:dots_indicator/dots_indicator.dart';
 import 'package:feather_icons/feather_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:share_plus/share_plus.dart';
 
 class DescriptionImageCarouselWithDots extends StatefulWidget {
   const DescriptionImageCarouselWithDots({super.key});
@@ -47,46 +48,62 @@ class _CustomCarouselWithDotsState
                   bottomLeft: Radius.circular(8.r),
                   bottomRight: Radius.circular(8.r))),
           padding: const EdgeInsets.all(0),
-          height: 350.h,
-          width: 300.w,
-          child: const Align(
+          height: 316.h,
+          width: double.infinity,
+          child: Align(
             alignment: Alignment.bottomCenter,
             child: Padding(
-              padding: EdgeInsets.symmetric(vertical: 14.0, horizontal: 8),
+              padding: const EdgeInsets.only(left: 8, right: 8),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Icon(
+                  const Icon(
                     FeatherIcons.download,
                     color: Colors.black54,
-                    size: 32,
+                    size: 26,
                   ),
-                  Icon(
+                  const Icon(
                     Icons.bookmark_border,
                     color: Colors.black54,
-                    size: 32,
+                    size: 26,
                   ),
-                  Icon(
+                  const Icon(
                     FeatherIcons.heart,
                     color: Colors.black54,
-                    size: 32,
+                    size: 26,
                   ),
-                  Icon(
+                  const Icon(
                     FeatherIconsSnakeCase.square,
                     color: Colors.black,
-                    size: 32,
+                    size: 26,
                   ),
-                  Icon(
+                  const Icon(
                     Icons.star_border,
                     color: Colors.black,
                     weight: 1,
-                    size: 32,
+                    size: 26,
                   ),
-                  Icon(
-                    Icons.share_outlined,
-                    color: Colors.black,
-                    size: 32,
-                  )
+                  SizedBox(
+                    width: 26,
+                    child: IconButton(
+                        constraints: const BoxConstraints(),
+                        padding: EdgeInsets.zero,
+                        onPressed: () async {
+                          await Share.share(
+                              'This text was supposed to be shared.');
+                        },
+                        icon: const Icon(
+                          Icons.share_outlined,
+                          color: Colors.black,
+                          size: 26,
+                        )),
+                  ),
+
+                  // Icon(
+                  //   Icons.share_outlined,
+                  //   color: Colors.black,
+                  //   size: 26,
+                  // )
                 ],
               ),
             ),
@@ -102,7 +119,7 @@ class _CustomCarouselWithDotsState
                   carouselController: carouselController,
                   items: items,
                   options: CarouselOptions(
-                    height: 300.h,
+                    height: 280.h,
                     aspectRatio: 16 / 9,
                     viewportFraction: 1,
                     initialPage: 0,
@@ -121,7 +138,7 @@ class _CustomCarouselWithDotsState
                     scrollDirection: Axis.horizontal,
                   )),
               Positioned(
-                bottom: 20.h,
+                bottom: 10.h,
                 left: 0,
                 right: 0,
                 child: DotsIndicator(
@@ -153,7 +170,7 @@ class DescriptionCarouselImageContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 300.w,
+      width: double.infinity,
       height: 300.h,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12.r),

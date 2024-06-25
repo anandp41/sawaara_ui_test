@@ -1,6 +1,7 @@
 import 'dart:convert';
 
-import 'package:flutter/material.dart';
+import '../../core/colors.dart';
+import 'package:velocity_x/velocity_x.dart';
 import '../../presentation/screens/login/login_model.dart';
 import '../data_sources/remote/api_client.dart';
 
@@ -10,7 +11,7 @@ class AuthRepo extends ApiClient {
       {required String email,
       required String password,
       required context}) async {
-    Map<String, dynamic> body = {
+    Map<String, String> body = {
       "username": email,
       "password": password,
       "grant_type": "password"
@@ -23,9 +24,11 @@ class AuthRepo extends ApiClient {
         return responseData;
       }
     } on Exception catch (e) {
-      //VxToast.show(context, msg: e.toString());
-      ScaffoldMessenger.of(context)
-          .showSnackBar(SnackBar(content: Text(e.toString())));
+      VxToast.show(context,
+          bgColor: MyColors.toastBgColor,
+          textColor: MyColors.toastTextColor,
+          msg: e.toString(),
+          position: VxToastPosition.center);
     }
     return LoginModel();
   }

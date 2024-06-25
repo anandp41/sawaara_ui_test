@@ -19,13 +19,14 @@ class CustomAppBar extends StatelessWidget {
           onPressed: () {
             Navigator.pop(context);
           },
+          padding: EdgeInsets.zero,
           icon: const Icon(
             Icons.chevron_left_sharp,
-            size: 34,
+            size: 32,
           )),
       title: Text(appBarTitle,
           style: TextStyle(
-              fontSize: 26.sp,
+              fontSize: 22.sp,
               color: MyColors.darkBlueColor,
               fontWeight: FontWeight.w500)),
     );

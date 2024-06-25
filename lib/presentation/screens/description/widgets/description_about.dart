@@ -18,20 +18,27 @@ class DescriptionAbout extends StatelessWidget {
           style: aboveNormalDarkBlueTextStyle,
         ),
         SizedBox(
-          height: 12.h,
+          height: 6.h,
         ),
-        Text(
-          'From cardiovascular health to fitness, flexibility, balance, stress relief, better sleep, increased cognitive performance, and more, you can reap all of these benefits in just onw session out on the waves. So, you may find yourself wondering what are the benefits of going on a surf camp.',
-          style: descriptionPageSubheadingsWhiteTextStyle,
-        ),
-        SizedBox(
-          height: 12.h,
-        ),
+        Text.rich(
+            textAlign: TextAlign.justify,
+            TextSpan(
+                text:
+                    'From cardiovascular health to fitness, flexibility, balance, stress relief, better sleep, increased cognitive performance, and more, you can reap all of these benefits in just one session out on the waves. So, you may find yourself wondering what are the benefits of going on a surf camp.',
+                style: TextStyle(
+                    fontSize: 13,
+                    height: 1.1,
+                    letterSpacing: 0.1,
+                    color: Colors.black.withOpacity(0.7),
+                    fontWeight: FontWeight.w400))),
         const Align(
           alignment: Alignment.centerRight,
-          child: Text(
-            'See More',
-            style: normalHighlightBlueTextStyle,
+          child: Padding(
+            padding: EdgeInsets.all(10.0),
+            child: Text(
+              'See More',
+              style: normalHighlightBlueTextStyle,
+            ),
           ),
         ),
       ],

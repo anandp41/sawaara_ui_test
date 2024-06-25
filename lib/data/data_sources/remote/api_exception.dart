@@ -1,3 +1,4 @@
+// Custom ApiException class to handle unforeseen non-String message
 class ApiException implements Exception {
   final dynamic message;
   ApiException({required this.message});

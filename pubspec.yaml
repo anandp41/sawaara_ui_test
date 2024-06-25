@@ -1,5 +1,5 @@
 name: screens
-description: "A new Flutter project."
+description: "A test for Sawaara"
 publish_to: 'none'
 version: 0.1.0
 
@@ -16,9 +16,10 @@ dependencies:
     sdk: flutter
   flutter_bloc: ^8.1.4
   flutter_screenutil: ^5.9.0
-  http: ^1.2.0
+  http: ^1.2.1
   persistent_bottom_nav_bar: ^5.0.2
   provider: ^6.1.1
+  share_plus: ^9.0.0
   signed_spacing_flex: ^1.1.0
   velocity_bloc: ^1.1.4
   velocity_x: ^4.1.2

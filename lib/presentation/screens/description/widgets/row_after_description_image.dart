@@ -16,7 +16,7 @@ class RowAfterDescriptionImage extends StatelessWidget {
         const Icon(
           Icons.bookmark_border,
           color: MyColors.lightBlueColor,
-          size: 24,
+          size: 20,
         ),
         SizedBox(
           width: 4.w,
@@ -25,7 +25,7 @@ class RowAfterDescriptionImage extends StatelessWidget {
           '1034',
           style: TextStyle(
               color: Colors.black.withOpacity(0.7),
-              fontSize: 16,
+              fontSize: 14,
               fontWeight: FontWeight.w600),
         ),
         SizedBox(
@@ -34,7 +34,7 @@ class RowAfterDescriptionImage extends StatelessWidget {
         const Icon(
           FeatherIcons.heart,
           color: MyColors.lightBlueColor,
-          size: 24,
+          size: 20,
         ),
         SizedBox(
           width: 4.w,
@@ -43,7 +43,7 @@ class RowAfterDescriptionImage extends StatelessWidget {
           '1034',
           style: TextStyle(
               color: Colors.black.withOpacity(0.7),
-              fontSize: 16,
+              fontSize: 14,
               fontWeight: FontWeight.w600),
         ),
         SizedBox(
@@ -92,7 +92,7 @@ class RowAfterDescriptionImage extends StatelessWidget {
           '3.2',
           style: TextStyle(
               color: MyColors.lightBlueColor,
-              fontSize: 16,
+              fontSize: 14,
               fontWeight: FontWeight.w500),
         )
       ],

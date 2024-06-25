@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 import '../../../core/colors.dart';
-import '../individual_meetup.dart/individual_meetup.dart';
+import 'individual_meetup.dart/individual_meetup.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});

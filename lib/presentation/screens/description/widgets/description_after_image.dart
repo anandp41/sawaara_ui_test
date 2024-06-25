@@ -17,27 +17,27 @@ class DescriptionAfterImage extends StatelessWidget {
       children: [
         const RowAfterDescriptionImage(),
         SizedBox(
-          height: 20.h,
+          height: 15.h,
         ),
         const Text(
           'Actor Name',
           style: aboveNormalDarkBlueTextStyle,
         ),
         SizedBox(
-          height: 1.h,
+          height: 2.h,
         ),
         Text(
           'Indian Actress',
           style: descriptionPageSubheadingsWhiteTextStyle,
         ),
         SizedBox(
-          height: 12.h,
+          height: 8.h,
         ),
         Row(
           children: [
             Icon(
               FeatherIcons.clock,
-              size: 20,
+              size: 16,
               color: Colors.black.withOpacity(0.6),
             ),
             Text(
@@ -47,13 +47,13 @@ class DescriptionAfterImage extends StatelessWidget {
           ],
         ),
         SizedBox(
-          height: 12.h,
+          height: 10.h,
         ),
         Row(
           children: [
             Icon(
-              Icons.wallet_sharp,
-              size: 20,
+              Icons.wallet,
+              size: 16,
               color: Colors.black.withOpacity(0.6),
             ),
             Text(
