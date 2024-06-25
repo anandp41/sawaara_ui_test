@@ -20,7 +20,7 @@ class _HomeState extends State<Home> {
         activeColorPrimary: MyColors.highlightBlueColor,
         inactiveColorPrimary: MyColors.darkBlueColor),
     PersistentBottomNavBarItem(
-        icon: const Icon(Icons.now_widgets_rounded),
+        icon: const Icon(Icons.widgets_outlined),
         title: 'Prolet',
         activeColorPrimary: MyColors.highlightBlueColor,
         inactiveColorPrimary: MyColors.darkBlueColor),

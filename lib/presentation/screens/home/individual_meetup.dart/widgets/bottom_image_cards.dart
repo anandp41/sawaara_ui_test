@@ -58,7 +58,7 @@ class ImageNumberStack extends StatelessWidget {
                   child: Text(
                     "${index + 1}".padLeft(2, '0'),
                     style: TextStyle(
-                        fontSize: 40.sp,
+                        fontSize: 38.sp,
                         color: MyColors.darkBlueColor,
                         fontWeight: FontWeight.w900),
                   ),
