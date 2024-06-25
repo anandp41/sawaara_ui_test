@@ -60,9 +60,9 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return PersistentTabView(
-      navBarHeight: 62,
+      navBarHeight: 72,
       // margin: EdgeInsets.only(top: 30),
-      padding: const NavBarPadding.symmetric(vertical: 10, horizontal: 2),
+      padding: const NavBarPadding.only(top: 12, bottom: 16, left: 2, right: 2),
       context,
       controller: _controller,
       screens: pages,
